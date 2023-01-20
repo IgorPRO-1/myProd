@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: 600px;
+  position: relative;
+  padding-top: 66.6666666667%;
+}
+@media screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 400px;
+  }
+}
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.gallery__thumb {
+  padding-top: 6px;
+  margin: 6px;
+  display: block;
+}
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+.gallery__selector:checked ~ .gallery__thumb > img {
+  box-shadow: 0 0 0 3px #0be2f6;
+}
+
+
+h1 {
+margin-left: 10%;
+color: white;
+margin-bottom: -3.5%;
+}
+
+
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 70%; /*убираем отступы*/
+  margin-top:3px; /*делаем отступ сверху*/
+  background:#25837b; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+.menu {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#25837b; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: Verdana; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #25837b; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+.menu:hover {
+  background:#21766f;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+/*** VARIABLES ***/
+/* Colors */
+/*** EXTEND ***/
+/* box-shadow */
+ol.gradient-list > li::before, ol.gradient-list > li {
+box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+
+/*** STYLE ***/
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+body {
+background:linear-gradient(#11998e, #38ef7d);
+color: #1d1f20;
+font-family: "Raleway", sans-serif;
+}
+
+main {
+display: block;
+margin: 0 auto;
+max-width: 40rem;
+padding: 1rem;
+}

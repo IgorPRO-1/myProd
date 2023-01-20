@@ -1,0 +1,52 @@
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 70%; /*убираем отступы*/
+  margin-top:3px; /*делаем отступ сверху*/
+  background:#25837b; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+.menu {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#25837b; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: Verdana; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #25837b; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+.menu:hover {
+  background:#21766f;/*добавляем эффект при наведении*/
+}
+
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+
+  .conteiner {
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .simple-linear {
+  background:linear-gradient(#11998e, #38ef7d);
+  }
+
+  h1 {
+    margin-left: 10%;
+    margin-bottom: -3.5%;
+    font-family:"Comic Sans MS";
+    color: white;
+  }
+   
+  p {
+    margin-bottom: 2%;
+    font-family:"Comic Sans MS";
+    color: rgb(0, 0, 0);
+  }
+  
